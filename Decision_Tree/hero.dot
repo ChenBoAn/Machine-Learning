@@ -1,0 +1,13 @@
+digraph Tree {
+node [shape=box, fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="gender <= 0.5\nentropy = 0.971\nsamples = 10\nvalue = [4, 6]\nclass = Iron Man"] ;
+1 [label="age <= 20.0\nentropy = 0.722\nsamples = 5\nvalue = [4, 1]\nclass = Captain America"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="entropy = 0.0\nsamples = 1\nvalue = [0, 1]\nclass = Iron Man"] ;
+1 -> 2 ;
+3 [label="entropy = 0.0\nsamples = 4\nvalue = [4, 0]\nclass = Captain America"] ;
+1 -> 3 ;
+4 [label="entropy = 0.0\nsamples = 5\nvalue = [0, 5]\nclass = Iron Man"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
